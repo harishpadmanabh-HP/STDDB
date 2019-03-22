@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stdresult">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdname"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roll no. :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdroll"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sem :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdsem"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Batch :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdbatch"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stddate"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maths :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdmaths"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Physics :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdphy"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ICS :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdics"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DS :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdds"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DAA :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stddaa"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RDBMS :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdrdbms"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CO :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/stdco"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

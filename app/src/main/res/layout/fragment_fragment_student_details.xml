@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentStudentDetails">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="name"
+          android:textSize="25dp"
+          android:textColor="#000"
+          android:id="@+id/svdname"
+          android:layout_margin="10dp"
+          />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:id="@+id/svdemail"
+            android:layout_below="@+id/svdname"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="age"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:id="@+id/svdage"
+            android:layout_below="@+id/svdemail"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOB"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:id="@+id/svddob"
+            android:layout_below="@+id/svdage"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reg no"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:id="@+id/svdregno"
+            android:layout_below="@+id/svddob"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course Period"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:id="@+id/svdcourseperiod"
+            android:layout_below="@+id/svdregno"
+            android:layout_margin="10dp"
+            />
+    </RelativeLayout>
+</FrameLayout>
