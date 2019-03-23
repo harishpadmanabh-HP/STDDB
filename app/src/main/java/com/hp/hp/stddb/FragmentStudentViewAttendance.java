@@ -1,6 +1,7 @@
 package com.hp.hp.stddb;
 
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -18,6 +19,8 @@ import org.json.JSONObject;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
+import static android.content.Context.MODE_PRIVATE;
 
 
 /**
@@ -58,8 +61,10 @@ public class FragmentStudentViewAttendance extends Fragment {
         client=new AsyncHttpClient();
         params=new RequestParams();
 
+        SharedPreferences sharedlogin = getActivity().getSharedPreferences("sharedlogin", MODE_PRIVATE);
+String uid=sharedlogin.getString("uid",null);
 
-        params.put("roll","2");
+        params.put("roll",uid);
 
         client.get(url,params,new AsyncHttpResponseHandler(){
             @Override

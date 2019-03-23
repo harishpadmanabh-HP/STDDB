@@ -56,9 +56,9 @@ public class Studentlogin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String emails=email.getEditText().getText().toString();
+                final String emails=email.getEditText().getText().toString();
                 String passwds=password.getEditText().getText().toString();
-
+final String e=emails;
 
                 if(!emails.isEmpty()&&!passwds.isEmpty())
                 {
@@ -82,6 +82,8 @@ public class Studentlogin extends AppCompatActivity {
                                     SharedPreferences.Editor editor = sharedlogin.edit();
                                     editor.putString("uid", Userid);
                                     editor.putString("namekey", name);
+                                    editor.putString("emailkey",e);
+                                    editor.apply();
 
                                     startActivity(new Intent(getApplicationContext(),StudentHome.class));
                                 }else

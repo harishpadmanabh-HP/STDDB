@@ -50,17 +50,18 @@ public class StaffHome extends AppCompatActivity {
             switch (i) {
 
                 case 0:
-                    StaffHomeFrag staffHomeFrag=new StaffHomeFrag();
-                    return staffHomeFrag;
-                case 1:
+//                    StaffHomeFrag staffHomeFrag=new StaffHomeFrag();
+//                    return staffHomeFrag;
                     StaffAddAttendanceFrag staffAddAttendanceFrag=new StaffAddAttendanceFrag();
                     return staffAddAttendanceFrag;
-                case 2:
+                case 1:
                     StaffAddMarkFrag staffAddMarkFrag=new StaffAddMarkFrag();
                     return staffAddMarkFrag;
-                case 3:
-                    StaffSearch staffSearch=new StaffSearch();
-                    return staffSearch;
+//                case 2:
+//
+//                case 3:
+//                    StaffSearch staffSearch=new StaffSearch();
+//                    return staffSearch;
 
 
                 default:
@@ -70,7 +71,7 @@ public class StaffHome extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 4;
+            return 2;
         }
 
         @Nullable
@@ -79,15 +80,15 @@ public class StaffHome extends AppCompatActivity {
 
             switch (position){
 
+//                case 0:
+//                    return "Home";
                 case 0:
-                    return "Home";
-                case 1:
                     return "Add Attendance";
-                case 2:
+                case 1:
                     return "Add Result";
 
-                case 3:
-                    return "Search";
+//                case 3:
+//                    return "Search";
                 default:
                     return null;
             }

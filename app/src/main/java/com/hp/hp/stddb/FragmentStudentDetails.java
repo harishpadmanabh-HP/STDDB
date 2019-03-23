@@ -45,11 +45,12 @@ TextView name,email,dob,age,regno,course;
         client=new AsyncHttpClient();
         params=new RequestParams();
 
-        SharedPreferences sharedregemail=getContext().getSharedPreferences("spfemail",MODE_PRIVATE);
-final String emailsh=sharedregemail.getString("email",null);
+        SharedPreferences sharedlogin = getActivity().getSharedPreferences("sharedlogin", MODE_PRIVATE);
+final String emailsh=sharedlogin.getString("emailkey",null);
 
+String e=sharedlogin.getString("uid",null);
 
-params.put("email",emailsh);
+        params.put("userid",e);
 
 client.get("http://sicsglobal.co.in/studentManagementApp/API/ViewStdntDetails.aspx?",params,new AsyncHttpResponseHandler(){
     @Override
