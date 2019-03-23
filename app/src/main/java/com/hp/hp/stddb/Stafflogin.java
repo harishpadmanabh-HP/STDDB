@@ -27,7 +27,7 @@ public class Stafflogin extends AppCompatActivity {
     JSONObject obj1;
     TextInputLayout userphone,passp;
     Button loginbtn,signup;
-    String url="http://sicsglobal.co.in/StudentManagementApp/API/StaffLogin.aspx?email=adarshnair.sics@gmail.com&password=1234";
+    String url="http://sicsglobal.co.in/StudentManagementApp/API/StaffLogin.aspx?";
 
 
     @Override
@@ -59,8 +59,8 @@ public class Stafflogin extends AppCompatActivity {
                     password.setError("Passwords not matching");
                 }
 
-                params.put("phone",userphone.getEditText().getText().toString());
-                params.put("password",passp.getEditText().getText().toString());
+                params.put("email",email.getEditText().getText().toString());
+                params.put("password",password.getEditText().getText().toString());
 
                 client.get(url,params,new AsyncHttpResponseHandler()
                 {
@@ -76,7 +76,7 @@ public class Stafflogin extends AppCompatActivity {
 
                             obj1=new JSONObject(content);
 
-                            String s=obj1.getString("status");
+                            String s=obj1.getString("Status");
 
                             Toast.makeText(Stafflogin.this, ""+s,
                                     Toast.LENGTH_SHORT).show();
@@ -104,6 +104,7 @@ public class Stafflogin extends AppCompatActivity {
                         }
                         catch (Exception e)
                         {
+                            Toast.makeText(Stafflogin.this, ""+e, Toast.LENGTH_SHORT).show();
 
                         }
                     }

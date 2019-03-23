@@ -5,5 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StaffHome">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_barxml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            layout="@layout/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"></include>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layoutxml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F9A825"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="#665d5d">
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pagerxml"
+        android:layout_width="381dp"
+        android:layout_height="455dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_barxml"
+        app:layout_constraintVertical_bias="0.14999998">
+
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+
 
 </android.support.constraint.ConstraintLayout>
