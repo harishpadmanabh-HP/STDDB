@@ -21,7 +21,7 @@ import org.json.JSONObject;
 public class Studentregister extends AppCompatActivity {
 
     TextView back;
-    TextInputLayout name,regno,dob,course,period,email,pass,age;
+    TextInputLayout name,regno,dob,course,period,email,pass,age,place,blood;
     Button submitbtn;
 
     AsyncHttpClient client;
@@ -54,6 +54,10 @@ public class Studentregister extends AppCompatActivity {
         pass=findViewById(R.id.passxml);
         submitbtn=findViewById(R.id.signupbtn);
         age=findViewById(R.id.agexml);
+        place=findViewById(R.id.place);
+        blood=findViewById(R.id.Blood);
+
+
 
         client=new AsyncHttpClient();
         params=new RequestParams();
@@ -69,6 +73,9 @@ public class Studentregister extends AppCompatActivity {
                 String eml=email.getEditText().getText().toString();
                 String paswd=pass.getEditText().getText().toString();
                 String ages=age.getEditText().getText().toString();
+                String places=place.getEditText().getText().toString();
+                String bloods=blood.getEditText().getText().toString();
+
 
                 SharedPreferences sharedregemail=getApplicationContext().getSharedPreferences("spfemail",MODE_PRIVATE);
                 SharedPreferences.Editor edt1=sharedregemail.edit();
@@ -86,6 +93,10 @@ public class Studentregister extends AppCompatActivity {
                     params.put("email",eml);
                     params.put("password",paswd);
                     params.put("age",ages);
+                    params.put("bldgrp",bloods);
+                    params.put("plc",places);
+
+
 
                     client.get(url,params,new AsyncHttpResponseHandler(){
                         @Override

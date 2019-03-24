@@ -57,8 +57,9 @@ public class StaffHome extends AppCompatActivity {
                 case 1:
                     StaffAddMarkFrag staffAddMarkFrag=new StaffAddMarkFrag();
                     return staffAddMarkFrag;
-//                case 2:
-//
+                case 2:
+                  StaffSearch staffSearch=new StaffSearch();
+                   return staffSearch;
 //                case 3:
 //                    StaffSearch staffSearch=new StaffSearch();
 //                    return staffSearch;
@@ -71,7 +72,7 @@ public class StaffHome extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 2;
+            return 3;
         }
 
         @Nullable
@@ -87,8 +88,8 @@ public class StaffHome extends AppCompatActivity {
                 case 1:
                     return "Add Result";
 
-//                case 3:
-//                    return "Search";
+                case 2:
+                    return "Search";
                 default:
                     return null;
             }
