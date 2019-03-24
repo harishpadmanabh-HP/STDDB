@@ -1,5 +1,6 @@
 package com.hp.hp.stddb;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -14,6 +15,8 @@ import com.loopj.android.http.RequestParams;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import static android.content.Context.MODE_PRIVATE;
 
 
 /**
@@ -57,9 +60,13 @@ public class FragmentStudentViewResult extends Fragment {
         client=new AsyncHttpClient();
         params=new RequestParams();
 
-        params.put("sem","Sem1");
-        params.put("batch","BCA");
-        params.put("rollno","2");
+        SharedPreferences sharedlogin = getActivity().getSharedPreferences("sharedlogin", MODE_PRIVATE);
+        final String emailsh=sharedlogin.getString("emailkey",null);
+
+        String e=sharedlogin.getString("uid",null);
+        params.put("sem","s1");
+        params.put("batch","bca");
+        params.put("rollno",e);
 
 
         Log.e("inn","out");
@@ -117,6 +124,9 @@ public class FragmentStudentViewResult extends Fragment {
 
 
                 }catch (Exception E){
+
+
+
 
                 }
             }

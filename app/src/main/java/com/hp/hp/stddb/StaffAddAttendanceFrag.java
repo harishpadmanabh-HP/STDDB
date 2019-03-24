@@ -39,7 +39,7 @@ public class StaffAddAttendanceFrag extends Fragment {
     CheckBox roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, roll10;
     AsyncHttpClient client;
     RequestParams params;
-    String url = "http://sicsglobal.co.in/studentManagementApp/API/Attendance_Add.aspx?rollno=2&dt=20-03-2019 ";
+    String url = "http://sicsglobal.co.in/studentManagementApp/API/Attendance_Add.aspx?";
     TextView date, viewdate;
 
 
@@ -101,17 +101,18 @@ public class StaffAddAttendanceFrag extends Fragment {
         client = new AsyncHttpClient();
         params = new RequestParams();
 
+
 //roll1
         roll1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
+                if (!isChecked) {
 
                     String rl1 = roll1.getText().toString();
-                    String dat = date.getText().toString();
+                    String dat = viewdate.getText().toString();
 
-                    params.put("rollno", rl1);
-                    params.put("dt", dat);
+                    params.put("rollno", "1");
+                    params.put("dt", "24-3-2018");
 
 
                     client.get(url, params, new AsyncHttpResponseHandler() {
@@ -124,7 +125,7 @@ public class StaffAddAttendanceFrag extends Fragment {
 
                                 if (att.equals("Success")) {
 
-                                    Toast.makeText(getContext(), "Success", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getContext(), "Success1", Toast.LENGTH_SHORT).show();
                                     String userid = mainobj.getString("AttendanceId");
                                     SharedPreferences sharedreg = getContext().getSharedPreferences("spf", MODE_PRIVATE);
                                     SharedPreferences.Editor edt = sharedreg.edit();
